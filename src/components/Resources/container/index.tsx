@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { CompProResources, OsuEecsResources, WebDevResources } from "../render";
+import { CompProResources, OsuEecsResources, WebDevResources, SecResources} from "../render";
 import type { ResourceMap } from "../types.ts";
 
 export default function ResourcesContainer({ resources }: { resources: ResourceMap }) {
@@ -22,6 +22,10 @@ export default function ResourcesContainer({ resources }: { resources: ResourceM
       {/* Web Development Resources */}
       <WebDevResources
         resources={resources.webDev}
+        handleCardClick={handleCardClick}
+      />
+      <SecResources
+        resources={resources.cyberSec}
         handleCardClick={handleCardClick}
       />
     </div>
