@@ -1,4 +1,4 @@
-import type { CompetitiveProgrammingResource, OsuResource, WebDevelopmentResource } from "../../types";
+import type { CompetitiveProgrammingResource, OsuResource, WebDevelopmentResource,SecurityResource } from "../../types";
 
 const compProResources: CompetitiveProgrammingResource[] = [
       {
@@ -158,10 +158,50 @@ const eecsOsuResources: OsuResource[] = [
       }
 ];
 
+const SecurityResources: SecurityResource[] = [
+      {
+            title: "OSUSEC website",
+            text: "OSU's security club website",
+            link: "https://osusec.org/"
+      },
+      {
+            title: "OSUSEC CTF League",
+            text: "Weekly beginner friendly CTF challenges hosted by OSUSEC",
+            link: "https://osusec.org/ctf-league/"
+      },
+      {
+            title: "PicoCTF", 
+            text: "CTF challenges hosted by Carngie Mellon University", 
+            link: "https://picoctf.org/"
+      },
+      {
+            title: "Pwn College", 
+            text: "Free online education platform hosted by ASU to practice and learn Cyber Security", 
+            link:"https://pwn.college/", 
+      },
+      {
+            title:"OhShINT Gitbook", 
+            text: "Free online Gitbook all about OSINT (Open Source Intelligence)",
+            link: "https://ohshint.gitbook.io/oh-shint-its-a-blog/osint/osint-wtf" 
+      },
+      {
+            title: "Intro to Binary Exploitation (“Nightmare”)", 
+            text: "Free online course introducing concepts such as reverse engineering, heap exploitation, and much more", 
+            link: "https://guyinatuxedo.github.io/" 
+      }, 
+      {
+            title: "Cryptohack", 
+            text: "Free online platform for learning cryptography with various challenges",
+            link: "https://cryptohack.org/"
+      }
+
+] 
+
 const resourceMap = {
       compPro: compProResources,
       webDev: webDevResources,
       eecsOsu: eecsOsuResources,
+      cyberSec: SecurityResources,
 };
 
 export default resourceMap;

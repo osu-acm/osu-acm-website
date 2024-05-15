@@ -17,6 +17,10 @@ export interface OsuResource extends Resource {
       type?: string;
 }
 
+export interface SecurityResource extends Resource {
+      type?: string;  
+}
+
 export interface Event {
       date: string;
       time: string;
